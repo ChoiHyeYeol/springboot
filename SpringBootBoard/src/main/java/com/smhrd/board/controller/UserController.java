@@ -42,7 +42,7 @@ public class UserController {
 		
 		userService.register(entity);
 		
-		return "";
+		return "login";
 	}
    
 	
