@@ -25,7 +25,7 @@ public class BoardService {
 	// 게시글 모두 출력
 	public List<BoardEntity> show() {
 		
-		return boardRepository.findAll();
+		return boardRepository.findAllByOrderByIdDesc();
 	}
 	
 	// 게시글 상세보기 기능
