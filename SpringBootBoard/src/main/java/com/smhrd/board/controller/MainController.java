@@ -20,7 +20,7 @@ public class MainController {
 	
 	// 메인페이지 띄우기 기능
 	// 1. 매핑할 메소드 만들기 --> boot에선 REST API Get/Post/Delete/patch 명시를 희망
-	@GetMapping("/index")
+	@GetMapping("/")
 	public String index(Model model) {
 		// legacy에서 return 타입을 String으로 잡았는데
 		// --> viewResolver 가 WEB/INF - views 폴더의 .jsp를 실행하겠습니다.
