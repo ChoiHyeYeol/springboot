@@ -10,7 +10,7 @@ import com.smhrd.board.entity.BoardEntity;
 public interface BoardRepository extends JpaRepository<BoardEntity, Long> {
 	
 	// 게시글 역순으로 출력
-//	List<BoardEntity> findAllByOrdeByIdDesc();
+	List<BoardEntity> findAllByOrdeByIdDesc();
 	
 	
 	// 제목으로 검색 기능 - containing --> like문
